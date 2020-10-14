@@ -9,15 +9,42 @@
     {
       "name": "source_0",
       "values": [
-        {"a": "A", "b": 28},
-        {"a": "B", "b": 55},
-        {"a": "C", "b": 43},
-        {"a": "D", "b": 91},
-        {"a": "E", "b": 81},
-        {"a": "F", "b": 53},
-        {"a": "G", "b": 19},
-        {"a": "H", "b": 87},
-        {"a": "I", "b": 52}
+        {
+          "a": "A",
+          "b": 28
+        },
+        {
+          "a": "B",
+          "b": 55
+        },
+        {
+          "a": "C",
+          "b": 43
+        },
+        {
+          "a": "D",
+          "b": 91
+        },
+        {
+          "a": "E",
+          "b": 81
+        },
+        {
+          "a": "F",
+          "b": 53
+        },
+        {
+          "a": "G",
+          "b": 19
+        },
+        {
+          "a": "H",
+          "b": 87
+        },
+        {
+          "a": "I",
+          "b": 52
+        }
       ]
     },
     {
@@ -32,7 +59,10 @@
     }
   ],
   "signals": [
-    {"name": "x_step", "value": 20},
+    {
+      "name": "x_step",
+      "value": 20
+    },
     {
       "name": "width",
       "update": "bandspace(domain('x').length, 0.1, 0.05) * x_step"
@@ -42,19 +72,39 @@
     {
       "name": "marks",
       "type": "rect",
-      "style": ["bar"],
-      "from": {"data": "data_0"},
+      "style": [
+        "bar"
+      ],
+      "from": {
+        "data": "data_0"
+      },
       "encode": {
         "update": {
-          "fill": {"value": "#4c78a8"},
-          "ariaRoleDescription": {"value": "bar"},
+          "fill": {
+            "value": "#4c78a8"
+          },
+          "ariaRoleDescription": {
+            "value": "bar"
+          },
           "description": {
             "signal": "\"a: \" + (isValid(datum[\"a\"]) ? datum[\"a\"] : \"\"+datum[\"a\"]) + \"; b: \" + (format(datum[\"b\"], \"\"))"
           },
-          "x": {"scale": "x", "field": "a"},
-          "width": {"scale": "x", "band": 1},
-          "y": {"scale": "y", "field": "b"},
-          "y2": {"scale": "y", "value": 0}
+          "x": {
+            "scale": "x",
+            "field": "a"
+          },
+          "width": {
+            "scale": "x",
+            "band": 1
+          },
+          "y": {
+            "scale": "y",
+            "field": "b"
+          },
+          "y2": {
+            "scale": "y",
+            "value": 0
+          }
         }
       }
     }
@@ -63,16 +113,32 @@
     {
       "name": "x",
       "type": "band",
-      "domain": {"data": "data_0", "field": "a", "sort": true},
-      "range": {"step": {"signal": "x_step"}},
+      "domain": {
+        "data": "data_0",
+        "field": "a",
+        "sort": true
+      },
+      "range": {
+        "step": {
+          "signal": "x_step"
+        }
+      },
       "paddingInner": 0.1,
       "paddingOuter": 0.05
     },
     {
       "name": "y",
       "type": "linear",
-      "domain": {"data": "data_0", "field": "b"},
-      "range": [{"signal": "height"}, 0],
+      "domain": {
+        "data": "data_0",
+        "field": "b"
+      },
+      "range": [
+        {
+          "signal": "height"
+        },
+        0
+      ],
       "nice": true,
       "zero": true
     }
@@ -83,7 +149,9 @@
       "orient": "left",
       "gridScale": "x",
       "grid": true,
-      "tickCount": {"signal": "ceil(height/40)"},
+      "tickCount": {
+        "signal": "ceil(height/40)"
+      },
       "domain": false,
       "labels": false,
       "aria": false,
@@ -107,7 +175,9 @@
       "grid": false,
       "title": "b",
       "labelOverlap": true,
-      "tickCount": {"signal": "ceil(height/40)"},
+      "tickCount": {
+        "signal": "ceil(height/40)"
+      },
       "zindex": 0
     }
   ],
