@@ -17,7 +17,7 @@
         "key": "Country",
         "fields": ["Life expectancy", "Adult Mortality", "infant deaths"]
       }
-    },
+    }
   ],
   "projection": {"type": "equirectangular"},
   "mark": {"type": "geoshape"},
