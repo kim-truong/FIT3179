@@ -4,7 +4,7 @@
   "width": 800,
   "height": 600,
   "data": {
-    "url": "https://raw.githubusercontent.com/kim-truong/FIT3179/blob/main/ne_110m_admin_0_countries.topojson",
+    "url": "https://raw.githubusercontent.com/kim-truong/FIT3179/main/ne_110m_admin_0_countries.topojson",
     "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
   },
   "transform": [
@@ -12,7 +12,7 @@
       "lookup": "properties.NAME",
       "from": {
         "data": {
-          "url": "https://raw.githubusercontent.com/kim-truong/FIT3179/blob/main/lifeexpectancy.csv"
+          "url": "https://raw.githubusercontent.com/kim-truong/FIT3179/main/lifeexpectancy.csv"
         },
         "key": "Country",
         "fields": ["Life expectancy", "Adult Mortality", "infant deaths"]
