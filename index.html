@@ -13,10 +13,17 @@
 <div id="vis"></div>
 
 <script type="text/javascript">
-  var spec = "https://kim-truong.github.io/FIT3179/visualization.vg.json";
-  vegaEmbed('#vis', spec).then(function(result) {
+  var vis1 = "https://kim-truong.github.io/FIT3179/visualization.vg.json";
+  vegaEmbed('#week8vis', vis1).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
+    
+  var vis2 = "js/scatter_plot_interactive.vg.json";
+  
+  vegaEmbed('#week9vis', vis2).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
 </script>
 
 </body>
