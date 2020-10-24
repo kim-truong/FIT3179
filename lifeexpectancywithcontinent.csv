@@ -1,0 +1,185 @@
+Country,LifeExpectancy,AdultMortality,InfantDeaths,HepatitisB,BMI,Continent
+Afghanistan,65,263,62,65,19.1,Asia
+Albania,77.8,74,0,99,58,Europe
+Algeria,75.6,19,21,95,59.5,Africa
+Angola,52.4,335,66,64,23.3,Africa
+Antigua and Barbuda,76.4,13,0,99,47.7,North America
+Argentina,76.3,116,8,94,62.8,South America
+Armenia,74.8,118,1,94,54.9,Asia
+Australia,82.8,59,1,93,66.6,Oceania
+Austria,81.5,65,0,93,57.6,Europe
+Azerbaijan,72.7,118,5,96,52.5,Asia
+Bahamas,76.1,147,0,95,64.5,North America
+Bahrain,76.9,69,0,98,63.6,Asia
+Bangladesh,71.8,129,92,97,18.3,Asia
+Barbados,75.5,98,0,97,54.5,North America
+Belarus,72.3,196,0,99,62.3,Europe
+Belgium,81.1,74,0,98,63.7,Europe
+Belize,71,175,0,94,5.9,North America
+Benin,60,249,25,82,25.7,Africa
+Bhutan,69.8,211,0,99,24.5,Asia
+Bolivia,77,186,8,99,52.6,South America
+Bosnia and Herz.,77.4,88,0,82,55.8,Europe
+Botswana,65.7,256,2,95,37.9,Africa
+Brazil,75,142,42,96,56.1,South America
+Brunei Darussalam,77.7,78,0,99,41.2,Asia
+Bulgaria,74.5,137,0,92,65.7,Europe
+Burkina Faso,59.9,26,38,91,19.4,Africa
+Burundi,59.6,288,21,94,18.7,Africa
+Côte d'Ivoire,53.3,397,57,83,28,Africa
+Cabo Verde,73.3,114,0,96,31.3,Africa
+Cambodia,68.7,174,10,89,19.6,Asia
+Cameroon,57.3,357,45,84,29,Africa
+Canada,82.2,64,2,55,67,North America
+Central African Rep.,52.5,397,15,47,22.7,Africa
+Chad,53.1,356,46,46,19.1,Africa
+Chile,85,82,2,97,63.8,South America
+China,76.1,85,157,99,32.9,Asia
+Colombia,74.8,143,10,91,57.9,South America
+Comoros,63.5,227,1,91,24.2,Africa
+Congo,64.7,267,7,8,27.4,Africa
+Costa Rica,79.6,95,1,92,6.5,North America
+Croatia,78,95,0,94,63.7,Europe
+Cuba,79.1,92,1,99,61.4,North America
+Cyprus,85,52,0,97,6.3,Asia
+Czechia,78.8,86,0,97,66.1,Europe
+North Korea,76,139,6,96,32.9,Asia
+Dem. Rep. Congo,59.8,258,236,81,21.6,Africa
+Denmark,86,71,0,,58.8,Europe
+Djibouti,63.5,241,1,84,35,Africa
+Dominican Republic,73.9,152,6,81,58.9,North America
+Ecuador,76.2,118,6,78,54.2,South America
+Egypt,79,159,51,93,61.1,Africa
+El Salvador,73.5,178,2,91,56.1,North America
+Eq. Guinea,58.2,32,3,16,24.5,Africa
+Eritrea,64.7,255,5,95,18.6,Africa
+Estonia,77.6,119,0,91,59.9,Europe
+Ethiopia,64.8,225,136,77,17.6,Africa
+Fiji,69.9,188,0,99,62.7,Oceania
+Finland,81.1,76,0,,62.1,Europe
+France,82.4,78,2,86,62.5,Europe
+Gabon,66,229,2,8,36.3,Africa
+Gambia,61.1,262,3,97,27.3,Africa
+Georgia,74.4,129,1,94,56.2,Asia
+Germany,81,68,2,88,62.3,Europe
+Ghana,62.4,249,37,88,28.6,Africa
+Greece,81,72,0,96,66.5,Europe
+Grenada,73.6,142,0,92,48.4,North America
+Guatemala,71.9,186,10,74,5.6,North America
+Guinea,59,284,26,54,23.3,Africa
+Guinea-Bissau,58.9,275,4,87,26.3,Africa
+Guyana,66.2,215,0,95,46.7,South America
+Haiti,63.5,24,14,6,49.9,North America
+Honduras,74.6,147,3,97,51,North America
+Hungary,75.8,134,0,,64.8,Europe
+Iceland,82.7,49,0,,61,Europe
+India,68.3,181,910,87,18.7,Asia
+Indonesia,69.1,176,114,78,27.4,Asia
+Iran,75.5,83,18,98,59.7,Asia
+Iraq,68.9,182,32,56,59.1,Asia
+Ireland,81.4,64,0,95,62.8,Europe
+Israel,82.5,58,0,96,64.9,Asia
+Italy,82.7,56,1,93,63.6,Europe
+Jamaica,76.2,125,1,91,54.2,North America
+Japan,83.7,55,2,,29,Asia
+Jordan,74.1,112,4,99,65.6,Asia
+Kazakhstan,72,198,4,98,53.1,Asia
+Kenya,63.4,249,54,89,22,Africa
+Kiribati,66.3,198,0,82,77.6,Oceania
+Kuwait,74.7,81,0,99,71.4,Asia
+Kyrgyzstan,71.1,166,3,97,44.9,Asia
+Laos,65.7,194,8,89,21.7,Asia
+Latvia,74.6,153,0,94,61.2,Europe
+Lebanon,74.9,98,1,81,66.1,Asia
+Lesotho,53.7,484,4,93,32.6,Africa
+Liberia,61.4,259,8,52,27.3,Africa
+Libya,72.7,138,1,97,64.8,Africa
+Lithuania,73.6,165,0,94,62.4,Europe
+Luxembourg,82,63,0,94,61.3,Europe
+Madagascar,65.5,22,28,69,2.5,Africa
+Malawi,58.3,365,26,88,19.6,Africa
+Malaysia,75,123,4,99,4.6,Asia
+Maldives,78.5,61,0,99,27.4,Asia
+Mali,58.2,266,52,64,23.8,Africa
+Malta,81.7,54,0,95,69.6,Europe
+Mauritania,63.1,25,8,73,3.8,Africa
+Mauritius,74.6,146,0,97,33.3,Africa
+Mexico,76.7,122,30,82,63.5,North America
+Micronesia,69.4,166,0,78,69.4,Oceania
+Mongolia,68.8,222,1,99,52.7,Asia
+Montenegro,76.1,16,0,82,61.8,Europe
+Morocco,74.3,95,17,99,58.5,Africa
+Mozambique,57.6,355,60,8,22.6,Africa
+Myanmar,66.6,199,39,89,23.8,Asia
+Namibia,65.8,248,2,92,35.7,Africa
+Nepal,69.2,165,17,91,19.1,Asia
+Netherlands,81.9,57,1,94,62.1,Europe
+New Zealand,81.6,66,0,92,67.5,Oceania
+Nicaragua,74.8,145,2,98,54,North America
+Niger,61.8,22,49,65,19.3,Africa
+Nigeria,54.5,344,483,49,25.4,Africa
+Norway,81.8,59,0,,61.2,Europe
+Oman,76.6,99,1,99,54.6,Asia
+Pakistan,66.4,161,352,72,25.4,Asia
+Panama,77.8,118,1,73,57.8,North America
+Papua New Guinea,62.9,275,10,67,48.6,Oceania
+Paraguay,74,146,2,93,5.2,South America
+Peru,75.5,123,8,9,55.6,South America
+Philippines,68.5,211,52,6,25.4,Asia
+Poland,77.5,117,2,96,61.7,Europe
+Portugal,81.1,76,0,98,61.6,Europe
+Qatar,78.2,68,0,99,69.3,Asia
+South Korea,82.3,64,1,98,31.7,Asia
+Moldova,72.1,157,1,88,53.4,Europe
+Romania,75,133,2,9,6.7,Europe
+Russia,75,222,13,97,6.5,Europe
+Rwanda,66.1,227,11,98,21.4,Africa
+Saint Lucia,75.2,138,0,99,47.5,North America
+Saint Vincent and the Grenadines,73.2,156,0,98,54.1,North America
+Samoa,74,125,0,59,74.7,Oceania
+Sao Tome and Principe,67.5,19,0,96,3.9,Africa
+Saudi Arabia,74.5,88,7,98,68.2,Asia
+Senegal,66.7,188,19,89,24.3,Africa
+Serbia,75.6,121,1,94,6,Europe
+Seychelles,73.2,168,0,98,37.4,Africa
+Sierra Leone,51,413,22,86,24.4,Africa
+Singapore,83.1,55,0,96,33.2,Asia
+Slovakia,76.7,19,0,96,59.1,Europe
+Slovenia,88,74,0,,6.1,Europe
+Solomon Islands,69.2,177,0,98,5.5,Oceania
+Somalia,55,312,50,42,24.3,Africa
+South Africa,62.9,328,42,75,51.1,Africa
+S. Sudan,57.3,332,26,31,,Africa
+Spain,82.8,56,1,97,66.6,Europe
+Sri Lanka,74.9,138,3,99,23.4,Asia
+Sudan,64.1,225,58,93,,Africa
+Suriname,71.6,176,0,89,58.3,South America
+Swaziland,58.9,373,2,9,32.3,Africa
+Sweden,82.4,53,0,67,59.5,Europe
+Switzerland,83.4,49,0,,57.4,Europe
+Syria,64.5,293,6,41,57.1,Asia
+Tajikistan,69.7,161,10,96,4.7,Asia
+Thailand,74.9,148,8,99,33.6,Asia
+Macedonia,75.7,12,0,92,6.3,Europe
+Timor-Leste,68.3,152,2,76,17.4,Asia
+Togo,59.9,287,13,88,24.3,Africa
+Tonga,73.5,133,0,78,75.2,Oceania
+Trinidad and Tobago,71.2,17,0,9,47.1,North America
+Tunisia,75.3,1,3,98,61.2,Africa
+Turkey,75.8,16,15,97,66.1,Asia
+Turkmenistan,66.3,215,6,99,48.6,Asia
+Uganda,62.3,291,66,78,18.5,Africa
+Ukraine,71.3,195,4,22,61.3,Europe
+United Arab Emirates,77.1,75,1,99,64.2,Asia
+United Kingdom,81.2,69,3,,66.6,Europe
+Tanzania,61.8,279,85,98,23.8,Africa
+United States of America,79.3,13,23,92,69.6,North America
+Uruguay,77,116,0,95,64,South America
+Uzbekistan,69.4,184,15,99,44.7,Asia
+Vanuatu,72,13,0,64,53.3,Oceania
+Venezuela,74.1,157,9,87,62.1,South America
+Vietnam,76,127,28,97,17.5,Asia
+Yemen,65.7,224,37,69,41.3,Asia
+Zambia,61.8,33,27,9,23.4,Africa
+Zimbabwe,67,336,22,87,31.8,Africa
+,,,,,,
