@@ -1,7 +1,5 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "width": 800,
-  "height": 600,
   "title": "Life Expectancy against BMI",
   "data": {
     "url": "https://raw.githubusercontent.com/kim-truong/FIT3179/main/lifeexpectancywithcontinent.csv"
