@@ -18,7 +18,7 @@ Belgium,2015,81.1,74,0,98,63.7
 Belize,2015,71,175,0,94,5.9
 Benin,2015,60,249,25,82,25.7
 Bhutan,2015,69.8,211,0,99,24.5
-Bolivia (Plurinational State of),2015,77,186,8,99,52.6
+Bolivia,2015,77,186,8,99,52.6
 Bosnia and Herzegovina,2015,77.4,88,0,82,55.8
 Botswana,2015,65.7,256,2,95,37.9
 Brazil,2015,75,142,42,96,56.1
@@ -26,7 +26,7 @@ Brunei Darussalam,2015,77.7,78,0,99,41.2
 Bulgaria,2015,74.5,137,0,92,65.7
 Burkina Faso,2015,59.9,26,38,91,19.4
 Burundi,2015,59.6,288,21,94,18.7
-C√¥te d'Ivoire,2015,53.3,397,57,83,28
+Côte d'Ivoire,2015,53.3,397,57,83,28
 Cabo Verde,2015,73.3,114,0,96,31.3
 Cambodia,2015,68.7,174,10,89,19.6
 Cameroon,2015,57.3,357,45,84,29
@@ -43,8 +43,8 @@ Croatia,2015,78,95,0,94,63.7
 Cuba,2015,79.1,92,1,99,61.4
 Cyprus,2015,85,52,0,97,6.3
 Czechia,2015,78.8,86,0,97,66.1
-Democratic People's Republic of Korea,2015,76,139,6,96,32.9
-Democratic Republic of the Congo,2015,59.8,258,236,81,21.6
+North Korea,2015,76,139,6,96,32.9
+Congo,2015,59.8,258,236,81,21.6
 Denmark,2015,86,71,0,,58.8
 Djibouti,2015,63.5,241,1,84,35
 Dominican Republic,2015,73.9,152,6,81,58.9
@@ -75,7 +75,7 @@ Hungary,2015,75.8,134,0,,64.8
 Iceland,2015,82.7,49,0,,61
 India,2015,68.3,181,910,87,18.7
 Indonesia,2015,69.1,176,114,78,27.4
-Iran (Islamic Republic of),2015,75.5,83,18,98,59.7
+Iran,2015,75.5,83,18,98,59.7
 Iraq,2015,68.9,182,32,56,59.1
 Ireland,2015,81.4,64,0,95,62.8
 Israel,2015,82.5,58,0,96,64.9
@@ -88,7 +88,7 @@ Kenya,2015,63.4,249,54,89,22
 Kiribati,2015,66.3,198,0,82,77.6
 Kuwait,2015,74.7,81,0,99,71.4
 Kyrgyzstan,2015,71.1,166,3,97,44.9
-Lao People's Democratic Republic,2015,65.7,194,8,89,21.7
+Laos,2015,65.7,194,8,89,21.7
 Latvia,2015,74.6,153,0,94,61.2
 Lebanon,2015,74.9,98,1,81,66.1
 Lesotho,2015,53.7,484,4,93,32.6
@@ -105,7 +105,7 @@ Malta,2015,81.7,54,0,95,69.6
 Mauritania,2015,63.1,25,8,73,3.8
 Mauritius,2015,74.6,146,0,97,33.3
 Mexico,2015,76.7,122,30,82,63.5
-Micronesia (Federated States of),2015,69.4,166,0,78,69.4
+Micronesia,2015,69.4,166,0,78,69.4
 Mongolia,2015,68.8,222,1,99,52.7
 Montenegro,2015,76.1,16,0,82,61.8
 Morocco,2015,74.3,95,17,99,58.5
@@ -129,10 +129,10 @@ Philippines,2015,68.5,211,52,6,25.4
 Poland,2015,77.5,117,2,96,61.7
 Portugal,2015,81.1,76,0,98,61.6
 Qatar,2015,78.2,68,0,99,69.3
-Republic of Korea,2015,82.3,64,1,98,31.7
-Republic of Moldova,2015,72.1,157,1,88,53.4
+South Korea,2015,82.3,64,1,98,31.7
+Moldova,2015,72.1,157,1,88,53.4
 Romania,2015,75,133,2,9,6.7
-Russian Federation,2015,75,222,13,97,6.5
+Russia,2015,75,222,13,97,6.5
 Rwanda,2015,66.1,227,11,98,21.4
 Saint Lucia,2015,75.2,138,0,99,47.5
 Saint Vincent and the Grenadines,2015,73.2,156,0,98,54.1
@@ -160,7 +160,7 @@ Switzerland,2015,83.4,49,0,,57.4
 Syrian Arab Republic,2015,64.5,293,6,41,57.1
 Tajikistan,2015,69.7,161,10,96,4.7
 Thailand,2015,74.9,148,8,99,33.6
-The former Yugoslav republic of Macedonia,2015,75.7,12,0,92,6.3
+Macedonia,2015,75.7,12,0,92,6.3
 Timor-Leste,2015,68.3,152,2,76,17.4
 Togo,2015,59.9,287,13,88,24.3
 Tonga,2015,73.5,133,0,78,75.2
@@ -171,13 +171,13 @@ Turkmenistan,2015,66.3,215,6,99,48.6
 Uganda,2015,62.3,291,66,78,18.5
 Ukraine,2015,71.3,195,4,22,61.3
 United Arab Emirates,2015,77.1,75,1,99,64.2
-United Kingdom of Great Britain and Northern Ireland,2015,81.2,69,3,,66.6
+United Kingdom,2015,81.2,69,3,,66.6
 United Republic of Tanzania,2015,61.8,279,85,98,23.8
 United States of America,2015,79.3,13,23,92,69.6
 Uruguay,2015,77,116,0,95,64
 Uzbekistan,2015,69.4,184,15,99,44.7
 Vanuatu,2015,72,13,0,64,53.3
-Venezuela (Bolivarian Republic of),2015,74.1,157,9,87,62.1
+Venezuela,2015,74.1,157,9,87,62.1
 Viet Nam,2015,76,127,28,97,17.5
 Yemen,2015,65.7,224,37,69,41.3
 Zambia,2015,61.8,33,27,9,23.4
