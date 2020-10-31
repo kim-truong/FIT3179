@@ -1,0 +1,128 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "description": "Parallel co-ordinates graph for WHI",
+  "width": 600,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/kim-truong/FIT3179/main/HDI.csv"
+  },
+
+"transform": [  
+    {"filter": "datum['Country'] && datum['Mortality Rates Infant'] && datum['Labour Force Participation Rate'] && datum['Employment To Population Ratio'] && datum['Internet Users']"},
+    {"window": [{"op": "count", "as": "index"}]},
+    {"fold": ["Labour Force Participation Rate", "Employment To Population Ratio", "Mortality Rates Infant", "Internet Users"]},
+    
+    {
+      "joinaggregate": [
+        {"op": "min", "field": "value", "as": "min"},
+        {"op": "max", "field": "value", "as": "max"}
+      ],
+      "groupby": ["key"]
+    },
+    {
+      "calculate": "((datum.value - datum.min) / (datum.max - datum.min))",
+      "as": "norm_val"
+          },
+    {
+      "calculate": "(datum.max - datum.min)/ 2",
+      "as": "mid"
+    }
+  ],
+"layer": [{
+    "mark": {"type": "rule", "color": "#ccc"},
+    "encoding": {
+      "detail": {"aggregate": "count"},
+      "x": {"field": "key"}
+    }
+  }, 
+    {
+      "mark": "line",
+        "encoding": {
+          "color": {"type": "nominal", "field": "Continent", "scale": {"range": [
+              "#7fc97f",
+              "#beaed4",
+              "#fdc086",
+              "#ffff99",
+              "#386cb0",
+              "#f0027f"
+            ]}
+            },
+          "detail": {"type": "nominal", "field": "Country"},
+          "opacity": {"value": 0.3},
+          "x": {"type": "nominal", "field": "key"},
+          "y": {"type": "quantitative", "field": "norm_val", "axis": null},
+          "tooltip": [{
+            "type": "nominal", "field": "Country", "title": "Country"
+          },
+          {
+            "type": "quantitative",
+            "field": "MortalityRatesInfant",
+            "title": "Mortality Rates Infant (%)"
+          }, {
+            "type": "quantitative",
+            "field": "LabourForceParticipationRate",
+            "title": "Labour Force Participation Rate (%)"
+          }, {
+            "type": "quantitative",
+            "field": "EmploymentToPopulationRatio",
+            "title": "Employment to Population Ratio (%)"
+          }, {
+            "type": "quantitative",
+            "field": "InternetUsers",
+            "title": "Proportion of Internet Users (%)"
+          }]
+        }
+      }, 
+      {
+        "encoding": {
+          "x": {"type": "nominal", "field": "key"},
+          "y": {"value": 0}
+      },
+    
+    "layer": [{
+          "mark": {"type": "text", "style": "label"},
+          "encoding": {
+            "text": {"aggregate": "max", "field": "max"}
+          }
+        }, {
+          "mark": {"type": "tick", "style": "tick", "size": 8, "color": "#ccc"}
+        }]
+      }, {
+        "encoding": {
+          "x": {"type": "nominal", "field": "key"},
+          "y": {"value": 150}
+        },
+    "layer": [{
+          "mark": {"type": "text", "style": "label"},
+          "encoding": {
+            "text": {"aggregate": "min", "field": "mid"}
+          }
+        }, {
+          "mark": {"type": "tick", "style": "tick", "size": 8, "color": "#ccc"}
+        }]
+      }, {
+        "encoding": {
+          "x": {"type": "nominal", "field": "key"},
+          "y": {"value": 300} 
+        },
+        "layer": [{
+          "mark": {"type": "text", "style": "label"},
+          "encoding": {
+            "text": {"aggregate": "min", "field": "min"}
+          }
+        }, {
+          "mark": {"type": "tick", "style": "tick", "size": 8, "color": "#ccc"}
+        }]
+      }],
+
+    
+"config": {
+    
+    "axisX": {"domain": false, "labelAngle": 0, "tickColor": "#ccc", "title": null},
+    "view": {"stroke": null},
+    "style": {
+      "label": {"baseline": "middle", "align": "right", "dx": -5},
+      "tick": {"orient": "horizontal"}
+    }
+  }
+}
