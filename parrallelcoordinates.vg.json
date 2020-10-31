@@ -1,8 +1,9 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "description": "Parallel co-ordinates graph for WHI",
-  "width": 600,
-  "height": 300,
+  "description": "Though Vega-Lite supports only one scale per axes, one can create a parallel coordinate plot by folding variables, using `joinaggregate` to normalize their values and using ticks and rules to manually create axes.",
+  "width": "container",
+  "title": "Parallel Coordinates Graph",
+  "height": 400,
   "data": {
     "url": "https://raw.githubusercontent.com/kim-truong/FIT3179/main/HDI.csv"
   },

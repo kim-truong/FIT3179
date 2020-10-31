@@ -1,0 +1,86 @@
+{
+  "height": 350,
+  "width": "container",
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "data": {"url": "https://raw.githubusercontent.com/kim-truong/FIT3179/main/HDI.csv"},
+   "params": [
+    {
+      "name": "Continent",
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "North America",
+          "South America",
+          "Europe",
+          "Africa",
+          "Asia",
+          "Oceania"
+        ],
+        "labels": [
+          "Show All",
+          "North America",
+          "South America",
+          "Europe",
+          "Africa",
+          "Asia",
+          "Oceania"
+        ],
+        "name": "Continent Selection: "
+      }
+    }
+  ],
+
+"transform": [
+    {"filter": {"field": "Gross national income (GNI) per capita",    "valid":true}},
+    {
+      "joinaggregate": [{
+        "op": "mean",
+        "field": "Gross national income (GNI) per capita",
+        "as": "Mean"
+      }]
+    },
+    {"calculate": "datum['Gross national income (GNI) per capita'] - datum.Mean" , "as": "MeanDiff"},
+  {"calculate": "datum.MeanDiff >= 0 ? 1: 0", "as": "PosNeg"},
+    {
+      "filter": "Continent == null || datum.Continent == Continent"
+    }
+  ],
+
+"layer": [ {
+      "selection": {
+        "continent_highlight": {
+          "type": "multi",
+          "fields": ["Continent"]
+        }
+      },
+      "mark": "bar",
+      
+      "encoding": {
+        "x": {"field": "Country", "type": "ordinal",
+        "axis": {"ticks": false, "offset": 3, "domain": false, "labelSeparation": 15, "labelOverlap": true
+      }
+      
+    },
+        "y": {
+          "field": "MeanDiff", "type": "quantitative",
+          "title": "Difference from the mean GNI per capita",
+          "axis": null
+        },
+      
+      "color": {"field": "PosNeg", "scale": {"domain": [0, 1], "range": ["#af8dc3", "#7fbf7b"]}, "legend": null},
+
+      "opacity": {
+          "condition": {"selection": "continent_highlight", "value": 0.6},
+          "value": 0.2
+        },
+
+      "tooltip": [
+        {"field": "Country", "type": "nominal"},
+        {"field": "MeanDiff", "type": "quantitative", "title": "Difference from the mean (USD)", "format": ".2f"},
+        {"field": "Gross national income (GNI) per capita", "type": "quantitative", "title": "Gross National Income (GNI) per capita (USD)"}
+      ]
+      }
+    }
+  ]
+}

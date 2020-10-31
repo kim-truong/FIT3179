@@ -1,23 +1,13 @@
+
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "width": 400,
-  "height": 300,
+  "width": "container",
+  "height": "container",
   "title": "Life Expectancy against BMI",
   "data": {
     "url": "https://raw.githubusercontent.com/kim-truong/FIT3179/main/lifeexpectancywithcontinent.csv"
   },
   "params": [
-    {
-      "name": "LifeExpectancy",
-      "value": 50,
-      "bind": {
-        "input": "range",
-        "min": 50,
-        "max": 100,
-        "step": 10,
-        "name": "Minimum Life Expectancy: "
-      }
-    },
     {
       "name": "Continent",
       "bind": {
@@ -47,7 +37,6 @@
   "transform": [
     {"filter": "datum.InfantDeaths > 0"},
     {"filter": "datum.BMI > 0"},
-    {"filter": "datum.LifeExpectancy > LifeExpectancy"},
     {
       "filter": "Continent == null || datum.Continent == Continent"
     }
@@ -58,7 +47,7 @@
       "type": "quantitative",
       "title": "Life Expectancy",
       "axis": {"tickCount": 7},
-      "scale": {"type": "linear", "domain": [40, 90]}
+      "scale": {"type": "linear", "domain": [50, 90]}
     },
     "y": {
       "field": "BMI",
@@ -127,8 +116,8 @@
     {
       "mark": {
         "type": "text",
-        "align": "right",
-        "baseline": "middle",
+        "align": "left",
+        "baseline": "line-bottom",
         "dx": -12,
         "fontSize": 11.5,
         "fontStyle": "italic"
@@ -138,7 +127,7 @@
         "color": {"value": "black"},
         "opacity": {
           "condition": {
-            "test": "datum['Country'] == 'China' || datum['Country'] == 'Singapore' || datum['Country'] == 'Australia' || datum['Country'] == 'New Zealand' || datum['Country'] == 'Italy' || datum['Country'] == 'Yemen' ||  datum['Country'] == 'United States'",
+            "test": "datum['Country'] == 'Chile' || datum['Country'] == 'Singapore' || datum['Country'] == 'Australia' || datum['Country'] == 'Central African Rep.' || datum['Country'] == 'Madagascar' || datum['Country'] == 'Japan' ||  datum['Country'] == 'Syria'",
             "value": 1
           },
           "value": 0
