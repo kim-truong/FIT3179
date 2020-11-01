@@ -19,36 +19,36 @@
       font-family: 'Source Sans Pro', sans-serif;
     }
     h3 {font-weight: 900;
-        font-size: 40px;}
+        font-size: 50px;}
     h1{
       font-weight: 900;
       font-size: 22px;
     }
     p {
-      font-size: 14px;
+      font-size: 12px;
     }
     body{
        background-color: #88d0db;
      }
      .page{
-       width: 1500px;    
+       width: 1200px;    
        background-color: white;   
        margin: auto;
-       padding: 25px;
+       padding: 40px;
        padding-top: 35px;
     }
     .vis-container{
       width: 100%;
-      height: 475px;
+      height: 500px;
     }
     .description h2, h1{
       margin-top: 0px;
     }
     .description-right {
-      padding-left: 60px;
+      padding-left: 80px;
     }
     .description-left{
-      padding-right: 60px;
+      padding-right: 80px;
     }
     .bold_text{
       font-weight: bold;
@@ -56,29 +56,33 @@
     }
     .pure-g{
       margin-bottom: 25px;
+      shape-margin: 25px;
     }
     .small-font{
-        font-size: 12px;
+        font-size: 10px;
     }
     .lower-le{
-        font-size: 18px;
+        font-size: 16px;
         font-weight: bold;
         color: #a8ddb5; 
     }
     .higher-le{
-        font-size: 18px;
+        font-size: 16px;
         font-weight: bold;
         color: #084081; 
     }
     .asia{
-        font-size: 18px;
+        font-size: 16px;
         font-weight: bold;
         color: #beaed4; 
     }
     .africa{
-        font-size: 18px;
+        font-size: 16px;
         font-weight: bold;
         color: #7fc97f; 
+    }
+    .vsmallfont{
+        font-size: 10px;
     }
   </style>
 </head>
@@ -90,7 +94,13 @@
     <div class="pure-g">
       <div class="pure-u-1-1">
         <center>
-        <h3>Life Expectancy</h1>
+        <h3>Life Expectancy</h3>
+        <span class="vsmallfont">
+          <p>Life expectancy is the estimate of the average age a person in a<br> 
+          population would be when pass away. It is a metric that has <br>
+           been used to compare the survial and quality of life experience <br>
+           for populations across the world</p>
+        </span>
         </center>
       </div>
     </div>
@@ -103,15 +113,14 @@
     </div>
     <!-- pure grid group -->
     <div class="pure-g">
-        <div class="pure-u-1-4">
+        <div class="pure-u-1-3">
           <div class="description description-left">
             <h2>Average Life Expectancies categorised by different countries</h2>
-            <p>Life expectancy is the estimate of the average age a person in a particular population would be when pass away. It is a metric that has been used to compare the survial and quality of life experience for populations across the world.</p>
-            <p>The choropleth map on the right shows the average Life Expectancy for different countries, with <span class="lower-le">lighter green</span> shades indicating lower averages for Life Expectancy and dark blue shades indicating higher averages for Life Expectancy. Values with no data are shaded in grey. </p>
+            <p>The choropleth map on the right shows the average Life Expectancy for different countries, with <span class="lower-le">lighter green</span> shades indicating lower averages for Life Expectancy and <span class="higher-le">dark blue</span> shades indicating higher averages for Life Expectancy. Values with no data are shaded in grey. </p>
             <p>Countries in <span class="africa">Africa</span> and <span class="asia">Asia</span> can be seen to have more countries with wider variety of Life Expectancies, with more countries with a <span class="lower-le">lower</span> Life Expectancy belonging to the two regions.</p>
           </div>
         </div>
-        <div class="pure-u-3-4">
+        <div class="pure-u-2-3">
           <div id="vis1" class="vis-container"></div>
         </div>
     </div>
@@ -119,7 +128,7 @@
 
     <div class="pure-g">
       <div class="pure-u-1-1 small-font">
-      <br><br><br><br><br><br><br><br><br>
+      <br><br><br><br><br><br><br>
       </div>
     </div>
     
@@ -131,8 +140,7 @@
         <div class="pure-u-1-3">
           <div class="description description-right">
             <h2>Comparing Life Expectancy against other factors</h2>            
-            <p>To examine the impact of health related factors such as Body Mass Index (BMI), and Infant Death Rate on lower Life Expectancy levels, a bubble plot is shown to the left.</p>
-            <p>Life Expectancy is depicted against BMI along the axes, with the bubbles representing each country being sized as the number of Infant Deaths per 1000 population coloured by the continent the country lies within.</p>
+            <p>In the bubble plot to the left, Life Expectancy is depicted against BMI along the axes, with the bubbles representing each country being sized as the number of Infant Deaths per 1000 population coloured by the continent the country lies within.</p>
             <p>The correlation between <span class="bold_text">BMI</span> and Life Expectancy appears to be <span class="bold_text">linear</span> in nature, with a some countries having lower BMI averages and high average Life Expectancy.</p>
             <p>Countries, particularly in <span class="africa">Africa</span>, with higher Infant Deaths and lower BMI averages are shown to have lower Life Expectancies. </p>
           </div>
@@ -141,7 +149,7 @@
     <!-- end pure grid group -->  
     <div class="pure-g">
       <div class="pure-u-1-1 small-font">
-      <br><br><br><br><br><br><br><br><br>
+      <br><br><br><br><br><br><br>
       </div>
     </div>
     <!-- pure grid group -->
@@ -149,11 +157,11 @@
         <div class="pure-u-1-3">
           <div class="description description-left">
             <h2>Examining economic trends against Life Expectancy</h2>
-            <p>Investigating the influence of different economic forces, such as the Employment to Population Ratio, Percentage of Internet Users and the Labour Force Participation Rate on Life Expectancy, the parallel coordinates graph is shown to the right. Each country is shown as one line on the graph coloured by its continent.</p>
+            <p>The parallel coordinates graph of Employment to Population Ratio, Percentage of Internet Users and the Labour Force Participation Rate is shown to the right. Each country is shown as one line on the graph coloured by its continent.</p>
             <p>The graph shows <span class="bold_text">two main trend lines</span>: one dominated by the colour <span class="lower-le">green</span>, representing <span class="africa">Africa</span> and another containing the <span class="bold_text">other colours</span>, behaving in the opposite direction.</p>
-            <p>The first trend group, as defined above shows the correlation between high values for Employment to Population Ratio, low proportions of Internet Users, high proportions of Labour Force Participation Rate, and <span class="lower-le">low</span> Life expectancies. </p>
+            <p>The <span class="bold_text">first</span> trend group, as defined above shows the correlation between high values for Employment to Population Ratio, low proportions of Internet Users, high proportions of Labour Force Participation Rate, and <span class="lower-le">low</span> Life expectancies. </p>
 
-            <p>The second group has the opposite levels for each of the variables discussed above, and can be grouped as indicators for a <span class="higher-le">higher</span></p>
+            <p>The <span class="bold_text">second</span> group has the opposite levels for each of the variables discussed above, and can be grouped as indicators for a <span class="higher-le">higher</span></p>
           </div>
         </div>
         <div class="pure-u-2-3">
@@ -164,7 +172,7 @@
 
     <div class="pure-g">
       <div class="pure-u-1-1 small-font">
-      <br><br><br><br><br><br><br><br><br><br>
+      <br><br><br><br><br><br><br><br>
       </div>
     </div>
 
@@ -176,7 +184,7 @@
         <div class="pure-u-1-3">
           <div class="description description-right">
             <h2>The differences in mean Gross National Income (GNI) and and its influences</h2>
-            <p><span class="bold_text">GNI</span> is the calculated as the total domestic and foreign output claimed by residents in a country. It is calculated by the gross domestic product (GDP) of the country, plus income earned by foreign residents minus income earned in the economy by foreign residents. </p>
+            <p><span class="bold_text">GNI</span> is the calculated as the total domestic and foreign output claimed by residents in a country.</p>
             <p>The diverging bar chart shown to the left shows the difference between a country's GNI and the average GNI, calculated as <span class="bold_text">$16608.27 million</span> USD from the data.</p>
             <p>The colours of the bars for each country are coloured by being <span class="higher-le">above</span> or <span class="lower-le">below</span> the average Life Expectancy, which is calculated as <span class="bold_text">71.1 years</span> from the data.</p>
             <p>The graph shows that a country that has a <span class="lower-le">lower</span> <span class="bold_text">GNI per capita</span> is more likely to have a <span class="lower-le">lower</span> Life Expectancy averages</p>
