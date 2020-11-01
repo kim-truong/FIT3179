@@ -86,7 +86,7 @@
         },
       
 
-      "color": {"field": "PosNeg", "scale": {"domain": ["Higher than Average", "Lower than Average"], "range": ["#084081", "#a8ddb5"]}, "legend": {"title": "Life Expectancy", "orient": "top-right"}},
+      "color": {"field": "PosNeg", "scale": {"domain": ["Higher than Average", "Lower than Average"], "range": ["#084081", "#a8ddb5"]}, "legend": {"title": "Life Expectancy", "orient": "bottom-right"}},
 
     
       "opacity": {
