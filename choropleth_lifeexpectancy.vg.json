@@ -42,5 +42,5 @@
       {"field": "LECalc", "type": "nominal", "format": ",", "title": "Life Expectancy in Years"}
     ]
   },
-  "config": {}
+  "config": {"style": {"cell": {"stroke": "transparent"}}}
 }

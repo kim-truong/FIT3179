@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "width": "container",
   "height": "container",
-  "title": "Life Expectancy against BMI",
+  "title": "Life Expectancy against BMI and Proportion of Infant Deaths",
   "data": {
     "url": "https://raw.githubusercontent.com/kim-truong/FIT3179/main/lifeexpectancywithcontinent.csv"
   },
@@ -135,6 +135,7 @@
         },
         "tooltip": [
           {"field": "Country", "type": "nominal"},
+          {"type": "nominal", "field": "Continent", "title": "Continent"},
           {"field": "LifeExpectancy", "type": "quantitative", "format": ",", "title": "Life Expectancy (Age)"},
           {"field": "AdultMortality", "type": "quantitative", "format": ",", "title": "Adult Mortality Rate per 1000 population"},
           {"field": "InfantDeaths", "type": "quantitative", "format": ",", "title": "Number of Infant Deaths per 1000 population"},

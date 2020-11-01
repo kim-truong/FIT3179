@@ -56,20 +56,23 @@
             "type": "nominal", "field": "Country", "title": "Country"
           },
           {
+            "type": "nominal", "field": "Continent", "title": "Continent"
+          },
+          {
             "type": "quantitative",
-            "field": "MortalityRatesInfant",
+            "field": "Mortality Rates Infant",
             "title": "Mortality Rates Infant (%)"
           }, {
             "type": "quantitative",
-            "field": "LabourForceParticipationRate",
+            "field": "Labour Force Participation Rate",
             "title": "Labour Force Participation Rate (%)"
           }, {
             "type": "quantitative",
-            "field": "EmploymentToPopulationRatio",
+            "field": "Employment To Population Ratio",
             "title": "Employment to Population Ratio (%)"
           }, {
             "type": "quantitative",
-            "field": "InternetUsers",
+            "field": "Internet Users",
             "title": "Proportion of Internet Users (%)"
           }]
         }
@@ -91,7 +94,7 @@
       }, {
         "encoding": {
           "x": {"type": "nominal", "field": "key"},
-          "y": {"value": 150}
+          "y": {"value": 225}
         },
     "layer": [{
           "mark": {"type": "text", "style": "label"},
@@ -104,7 +107,7 @@
       }, {
         "encoding": {
           "x": {"type": "nominal", "field": "key"},
-          "y": {"value": 300} 
+          "y": {"value": 450} 
         },
         "layer": [{
           "mark": {"type": "text", "style": "label"},

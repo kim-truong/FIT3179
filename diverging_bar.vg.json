@@ -1,6 +1,7 @@
 {
   "height": "container",
   "width": "container",
+  "title": "Difference from the Mean GNI per Capita",
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "data": {"url": "https://raw.githubusercontent.com/kim-truong/FIT3179/main/HDI.csv"},
    "params": [
@@ -101,8 +102,11 @@
 
       "tooltip": [
         {"field": "Country", "type": "nominal"},
+        {"type": "nominal", "field": "Continent", "title": "Continent"},
+        {"type": "nominal", "field": "Continent", "title": "Continent"},
         {"field": "MeanDiff", "type": "quantitative", "title": "Difference from the mean (USD)", "format": ".2f"},
         {"field": "Gross national income (GNI) per capita", "type": "quantitative", "title": "Gross National Income (GNI) per capita (USD)"}
+        
       ]
       }
     }
