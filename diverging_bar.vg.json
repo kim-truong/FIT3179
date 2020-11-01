@@ -46,7 +46,21 @@
   {"calculate": "datum.MeanDiff >= 0 ? 1: 0", "as": "PosNeg"},
     {
       "filter": "Continent == null || datum.Continent == Continent"
+    },
+
+    {
+      "joinaggregate": [{
+        "op": "mean",
+        "field": "Life Expectancy",
+        "as": "LEMean"
+      }]
+    },
+    {"calculate": "datum['Life Expectancy'] - datum.LEMean" , "as": "LeMean"},
+  {"calculate": "datum.LeMean >= 0 ? 'Higher than Average': 'Lower than Average'", "as": "PosNeg"},
+    {
+      "filter": "Continent == null || datum.Continent == Continent"
     }
+
   ],
 
 "layer": [ {
@@ -71,28 +85,9 @@
           "axis": {"grid": false}
         },
       
-        "color": {
-          "field": "Continent",
-          "type": "nominal",
-          "scale": {
-            "domain": [
-              "North America",
-              "South America",
-              "Europe",
-              "Africa",
-              "Asia",
-              "Oceania"
-            ],
-            "range": [
-              "#e6e92b",
-              "#c51b7d",
-              "#fdc086",
-              "#7fc97f",
-              "#beaed4",
-              "#386cb0"
-            ]
-          }
-        },
+
+      "color": {"field": "PosNeg", "scale": {"domain": ["Higher than Average", "Lower than Average"], "range": ["#084081", "#a8ddb5"]}, "legend": {"title": "Life Expectancy", "orient": "top-right"}},
+
     
       "opacity": {
           "condition": {"selection": "continent_highlight", "value": 0.6},
