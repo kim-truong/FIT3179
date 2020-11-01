@@ -1,4 +1,3 @@
-
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "width": "container",
@@ -46,13 +45,13 @@
       "field": "LifeExpectancy",
       "type": "quantitative",
       "title": "Life Expectancy",
-      "axis": {"tickCount": 7},
+      "axis": {"tickCount": 7, "grid": false},
       "scale": {"type": "linear", "domain": [50, 90]}
     },
     "y": {
       "field": "BMI",
       "type": "quantitative",
-      "axis": {"tickCount": 7},
+      "axis": {"tickCount": 7, "grid": false},
       "scale": {"type": "linear", "domain": [2, 80]}
     }
   },
@@ -66,16 +65,18 @@
         }
       },
       "mark": "circle",
+      
       "encoding": {
         "size": {
-          "field": "BMI",
+          "field": "InfantDeaths",
           "type": "quantitative",
           "scale": {
             "type": "threshold",
             "domain": [10, 20, 30, 40, 60, 65, 70],
-            "range": [10, 50, 150, 200, 300, 400]
+            "range": [30, 50, 150, 200, 300, 400]
           },
-          "legend": {"format": ".1s"}
+          "legend": {"format": ".1s"},
+          "title": "# Infant Deaths"
         },
         "color": {
           "field": "Continent",
@@ -90,12 +91,12 @@
               "Oceania"
             ],
             "range": [
-              "#e41a1c",
+              "#ffff99",
               "#984ea3",
-              "#ff7f00",
-              "#a6cee3",
-              "#377eb8",
-              "#a65628"
+              "#fdc086",
+              "#7fc97f",
+              "#beaed4",
+              "#386cb0"
             ]
           }
         },
@@ -127,20 +128,22 @@
         "color": {"value": "black"},
         "opacity": {
           "condition": {
-            "test": "datum['Country'] == 'Chile' || datum['Country'] == 'Singapore' || datum['Country'] == 'Australia' || datum['Country'] == 'Central African Rep.' || datum['Country'] == 'Madagascar' || datum['Country'] == 'Japan' ||  datum['Country'] == 'Syria'",
+            "test": "datum['Country'] == 'United State of America' || datum['Country'] == 'Singapore' || datum['Country'] == 'Australia' || datum['Country'] == 'Central African Rep.' || datum['Country'] == 'Madagascar' || datum['Country'] == 'Japan' ||  datum['Country'] == 'South Africa'",
             "value": 1
           },
           "value": 0
         },
         "tooltip": [
           {"field": "Country", "type": "nominal"},
-          {"field": "LifeExpectancy", "type": "quantitative", "format": ","},
-          {"field": "AdultMortality", "type": "quantitative", "format": ","},
-          {"field": "InfantDeaths", "type": "quantitative", "format": ","},
-          {"field": "HepatitisB", "type": "quantitative", "format": ","},
-          {"field": "BMI", "type": "quantitative", "format": ","}
+          {"field": "LifeExpectancy", "type": "quantitative", "format": ",", "title": "Life Expectancy (Age)"},
+          {"field": "AdultMortality", "type": "quantitative", "format": ",", "title": "Adult Mortality Rate per 1000 population"},
+          {"field": "InfantDeaths", "type": "quantitative", "format": ",", "title": "Number of Infant Deaths per 1000 population"},
+          {"field": "HepatitisB", "type": "quantitative", "format": ",", "title": "Proportion of people with Hepatitis B"},
+          {"field": "BMI", "type": "quantitative", "format": ",", "title": "BMI"}
         ]
       }
     }
-  ]
+  ],
+  "config": {"view": {"stroke": null}
+            }
 }

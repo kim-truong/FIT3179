@@ -65,7 +65,7 @@
         "y": {
           "field": "MeanDiff", "type": "quantitative",
           "title": "Difference from the mean GNI per capita",
-          "axis": null
+          "axis": {"grid": false}
         },
       
       "color": {"field": "PosNeg", "scale": {"domain": [0, 1], "range": ["#af8dc3", "#7fbf7b"]}, "legend": null},
