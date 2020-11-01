@@ -81,7 +81,7 @@
     },
         "x": {
           "field": "MeanDiff", "type": "quantitative",
-          "title": "Difference from the mean GNI per capita",
+          "title": "Difference from the mean GNI per capita ($Million USD)",
           "axis": {"grid": false}
         },
       
@@ -99,8 +99,8 @@
         {"field": "Country", "type": "nominal"},
         {"type": "nominal", "field": "Continent", "title": "Continent"},
         {"type": "nominal", "field": "Continent", "title": "Continent"},
-        {"field": "MeanDiff", "type": "quantitative", "title": "Difference from the mean (USD)", "format": ".2f"},
-        {"field": "Gross national income (GNI) per capita", "type": "quantitative", "title": "Gross National Income (GNI) per capita (USD)"}
+        {"field": "MeanDiff", "type": "quantitative", "title": "Difference from the mean ($M USD)", "format": ".2f"},
+        {"field": "Gross national income (GNI) per capita", "type": "quantitative", "title": "Gross National Income (GNI) per capita ($M USD)"}
         
       ]
       }

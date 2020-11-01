@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "description": "Though Vega-Lite supports only one scale per axes, one can create a parallel coordinate plot by folding variables, using `joinaggregate` to normalize their values and using ticks and rules to manually create axes.",
   "width": "container",
-  "title": "Parallel Coordinates Graph",
+  "title": "Life Expectancy against economic factors",
   "height": 400,
   "data": {
     "url": "https://raw.githubusercontent.com/kim-truong/FIT3179/main/HDI.csv"
@@ -11,7 +11,7 @@
 "transform": [  
     {"filter": "datum['Country'] && datum['Mortality Rates Infant'] && datum['Labour Force Participation Rate'] && datum['Employment To Population Ratio'] && datum['Internet Users']"},
     {"window": [{"op": "count", "as": "index"}]},
-    {"fold": ["Labour Force Participation Rate", "Employment To Population Ratio", "Mortality Rates Infant", "Internet Users"]},
+    {"fold": ["Labour Force Participation Rate", "Employment To Population Ratio", "Life Expectancy", "Internet Users"]},
     
     {
       "joinaggregate": [
@@ -60,8 +60,8 @@
           },
           {
             "type": "quantitative",
-            "field": "Mortality Rates Infant",
-            "title": "Mortality Rates Infant (%)"
+            "field": "Life Expectancy",
+            "title": "Life Expectancy"
           }, {
             "type": "quantitative",
             "field": "Labour Force Participation Rate",
@@ -94,7 +94,7 @@
       }, {
         "encoding": {
           "x": {"type": "nominal", "field": "key"},
-          "y": {"value": 225}
+          "y": {"value": 200}
         },
     "layer": [{
           "mark": {"type": "text", "style": "label"},
@@ -107,7 +107,7 @@
       }, {
         "encoding": {
           "x": {"type": "nominal", "field": "key"},
-          "y": {"value": 450} 
+          "y": {"value": 400} 
         },
         "layer": [{
           "mark": {"type": "text", "style": "label"},
