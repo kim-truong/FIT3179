@@ -1,5 +1,5 @@
 {
-  "height": 350,
+  "height": "container",
   "width": "container",
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "data": {"url": "https://raw.githubusercontent.com/kim-truong/FIT3179/main/HDI.csv"},
@@ -32,7 +32,8 @@
   ],
 
 "transform": [
-    {"filter": {"field": "Gross national income (GNI) per capita",    "valid":true}},
+    {"filter": {"field": "Gross national income (GNI) per capita",  "valid":true}},
+    {"filter": "datum['Gross national income (GNI) per capita'] > 0"},
     {
       "joinaggregate": [{
         "op": "mean",
@@ -57,23 +58,46 @@
       "mark": "bar",
       
       "encoding": {
-        "x": {"field": "Country", "type": "ordinal",
-        "axis": {"ticks": false, "offset": 3, "domain": false, "labelSeparation": 15, "labelOverlap": true
-      }
+        "y": {"field": "Country", "type": "ordinal",
+        "axis": {"ticks": false, "offset": 3, "labelSeparation": 15, "labelOverlap": true
+      },
+      "sort": {"op": "sum", "field": "MeanDiff", "order": "descending"}
       
     },
-        "y": {
+        "x": {
           "field": "MeanDiff", "type": "quantitative",
           "title": "Difference from the mean GNI per capita",
           "axis": {"grid": false}
         },
       
-      "color": {"field": "PosNeg", "scale": {"domain": [0, 1], "range": ["#af8dc3", "#7fbf7b"]}, "legend": null},
-
+        "color": {
+          "field": "Continent",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "North America",
+              "South America",
+              "Europe",
+              "Africa",
+              "Asia",
+              "Oceania"
+            ],
+            "range": [
+              "#e6e92b",
+              "#c51b7d",
+              "#fdc086",
+              "#7fc97f",
+              "#beaed4",
+              "#386cb0"
+            ]
+          }
+        },
+    
       "opacity": {
           "condition": {"selection": "continent_highlight", "value": 0.6},
           "value": 0.2
         },
+        
 
       "tooltip": [
         {"field": "Country", "type": "nominal"},
@@ -82,5 +106,12 @@
       ]
       }
     }
-  ]
+  ],
+  "config": {
+    "view": {"stroke": null},
+    "style": {
+      "label": {"baseline": "middle", "align": "right"},
+      "tick": {"orient": "horizontal"}
+  }
+}
 }
