@@ -119,7 +119,7 @@
         "type": "text",
         "align": "left",
         "baseline": "line-bottom",
-        "dx": -12,
+        "dx": 8,
         "fontSize": 11.5,
         "fontStyle": "italic"
       },
@@ -128,7 +128,7 @@
         "color": {"value": "black"},
         "opacity": {
           "condition": {
-            "test": "datum['Country'] == 'United State of America' || datum['Country'] == 'Singapore' || datum['Country'] == 'Australia' || datum['Country'] == 'Central African Rep.' || datum['Country'] == 'Madagascar' || datum['Country'] == 'Japan' ||  datum['Country'] == 'South Africa'",
+            "test": "datum['Country'] == 'United State of America' || datum['Country'] == 'Singapore' || datum['Country'] == 'Netherlands' || datum['Country'] == 'Chad' || datum['Country'] == 'Madagascar' || datum['Country'] == 'Japan' ||  datum['Country'] == 'Thailand'",
             "value": 1
           },
           "value": 0
